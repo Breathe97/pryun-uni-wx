@@ -1,0 +1,99 @@
+{
+    "name" : "PR云",
+    "appid" : "__UNI__4011BA1",
+    "description" : "一个前端开发者的云社区。",
+    "versionName" : "1.0.0",
+    "versionCode" : "100",
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {},
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "autoSdkPermissions" : false
+            },
+            /* ios打包配置 */
+            "ios" : {},
+            /* SDK配置 */
+            "sdkConfigs" : {}
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "wxa91266d4008c6863",
+        "darkmode" : true, // 开启暗黑模式
+        "themeLocation" : "theme.json", // 主题颜色配置
+        "lazyCodeLoading" : "requiredComponents", // 按需注入
+        "optimization" : {
+            "subPackages" : true // 分包优化
+        },
+        "requiredPrivateInfos" : [ "chooseLocation", "getLocation" ],
+        "setting" : {
+            "checkSiteMap" : false, // 不检查当前路由匹配
+            "urlCheck" : true,
+            "minified" : true,
+            "es6" : false,
+            "postcss" : false
+        },
+        "usingComponents" : true,
+        "plugins" : {},
+        // "uni-ad": {
+        // 	"version": "1.1.0",
+        // 	"provider": "wx999bf02c8e05dfc9"
+        // },
+        // "coral-adv": {
+        // 	"version": "1.0.10",
+        // 	"provider": "wx0e203209e27b1e66"
+        // },
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "使用当前位置来提供对应服务"
+            }
+        }
+    },
+    "mp-alipay" : {
+        "usingComponents" : true,
+        "appid" : "5000000003073494"
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "vueVersion" : "3"
+}

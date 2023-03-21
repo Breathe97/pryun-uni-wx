@@ -1,0 +1,56 @@
+/* 暗黑模式 */
+@media (prefers-color-scheme: dark) {
+
+	page {
+		/* 很多地方得到图标都会调用该属性进行反转 */
+		--color-reverse: invert(1) hue-rotate(180deg);
+
+		/* 主题颜色 */
+		--color-primary: rgba(0, 151, 255, 1.0);
+
+		/* 通用色彩 */
+		--color-red: rgba(255, 69, 58, 1.0);
+		--color-orange: rgba(255, 159, 10, 1.0);
+		--color-yellow: rgba(255, 214, 10, 1.0);
+		--color-green: rgba(48, 209, 88, 1.0);
+		--color-mint: rgba(102, 212, 207, 1.0);
+		--color-teal: rgba(64, 200, 224, 1.0);
+		--color-cyan: rgba(100, 210, 255, 1.0);
+		--color-blue: rgba(0, 151, 255, 1.0);
+		--color-indigo: rgba(94, 92, 230, 1.0);
+		--color-purple: rgba(191, 90, 242, 1.0);
+		--color-pink: rgba(255, 55, 95, 1.0);
+		--color-brown: rgba(172, 142, 104, 1.0);
+		--color-gray: rgba(142, 142, 147, 1.0);
+		--color-gray2: rgba(99, 99, 102, 1.0);
+		--color-gray3: rgba(72, 72, 74, 1.0);
+		--color-gray4: rgba(58, 58, 60, 1.0);
+		--color-gray5: rgba(44, 44, 46, 1.0);
+		--color-gray6: rgba(28, 28, 30, 1.0);
+		--color-mask: rgba(0, 0, 0, 0.5);
+		--color-text-dark: rgba(255, 255, 255, 1.0);
+
+		/* 其他组件颜色 */
+		--color-pr-navbar-bg: rgba(0, 0, 0, 0.5);
+		--color-pr-navbar-border: rgba(189, 189, 189, 1.0);
+
+		--color-pr-tabbar-bg: rgba(0, 0, 0, 0.5);
+
+		--color-pr-switch-bg: rgba(57, 56, 61, 1.0);
+
+		--color-pr-loading-bg: rgba(58, 58, 60, 0.7);
+
+		--color-pr-row-cell-bg: rgba(28, 28, 28, 1.0);
+		--color-pr-row-cell-active: rgba(44, 44, 44, 1.0);
+
+		--color-pr-modal-bg: rgba(58, 58, 60, 0.7);
+		--color-pr-modal-active: rgba(132, 132, 132, 0.3);
+
+		--color-pr-calendar-bg: rgba(0, 0, 0, 0.7);
+		--color-pr-calendar-active: rgba(143, 143, 143, 0.3);
+
+		--color-pr-action-sheet-bg: rgba(58, 58, 60, 0.8);
+		--color-pr-action-sheet-bg-close: rgba(58, 58, 60, 0.9);
+		--color-pr-action-sheet-active: rgba(143, 143, 143, 0.3);
+	}
+}

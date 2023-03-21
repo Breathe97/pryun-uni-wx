@@ -1,0 +1,80 @@
+page {
+	--color-page-bg: rgba(242, 241, 246, 1);
+}
+
+
+/* 适配自动暗黑 */
+@media (prefers-color-scheme: dark) {
+	page {
+		--color-page-bg: rgba(0, 0, 0, 1);
+	}
+}
+
+/* 整体页面 */
+.pr-page {
+	min-height: 100vh;
+	font-size: 14px;
+	background-color: var(--color-page-bg, rgba(242, 241, 246, 1));
+	transition: all 230ms ease-out;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-anchor: auto;
+}
+
+/* 主体内容 适配大屏 */
+.pr-body {
+	position: relative;
+	padding: 0 20px;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 800px;
+	flex: 1;
+}
+
+/* 行文本超出省略 */
+.text-line-1 {
+	padding: 6px 0;
+	line-height: 1;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* 清除button默认样式 */
+.button-clear {
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0;
+	border-radius: 0;
+	font-size: inherit;
+	background-color: rgba(0, 0, 0, 0);
+	overflow: visible;
+}
+
+.button-clear[type=default] {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+/* 清除button默认样式 */
+.button-clear::after {
+	border-width: 0;
+	z-index: -1;
+}
+
+/* 底部安全距离 */
+.safe-area-inset-bottom {
+	padding-bottom: constant(safe-area-inset-bottom);
+	padding-bottom: env(safe-area-inset-bottom);
+}
+
+.tips-view {
+	width: 24px;
+	height: 24px;
+	background-color: var(--color-red, red);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+}

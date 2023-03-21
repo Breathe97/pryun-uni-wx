@@ -1,0 +1,52 @@
+{
+	"light": {
+
+		"about-backgroundColor": "#ffffff",
+		"about-backgroundColorTop": "#ffffff",
+		"about-backgroundColorBottom": "#ffffff",
+
+		"load-backgroundColor": "#0097FF",
+		"load-backgroundColorTop": "#0097FF",
+		"load-backgroundColorBottom": "#ffffff",
+
+		"login-backgroundColor": "#007aff",
+		"login-backgroundColorTop": "#007aff",
+		"login-backgroundColorBottom": "#ffffff",
+
+		"renew-log-backgroundColor": "#4D6279",
+		"renew-log-backgroundColorTop": "#4D6279",
+
+		"navigationBarTextStyle": "black",
+		"navigationBarTextStyleReverse": "white",
+		"navBackgroundColor": "#F2F1F6",
+		"backgroundColor": "#F2F1F6",
+		"backgroundColorTop": "#F2F1F6",
+		"backgroundColorBottom": "#F2F1F6",
+		"backgroundTextStyle": "dark"
+	},
+	"dark": {
+
+		"about-backgroundColor": "#000000",
+		"about-backgroundColorTop": "#000000",
+		"about-backgroundColorBottom": "#000000",
+
+		"load-backgroundColor": "#3F3F3F",
+		"load-backgroundColorTop": "#3F3F3F",
+		"load-backgroundColorBottom": "#191919",
+
+		"login-backgroundColor": "#000000",
+		"login-backgroundColorTop": "#000000",
+		"login-backgroundColorBottom": "#1C1C1C",
+
+		"renew-log-backgroundColor": "#4D6279",
+		"renew-log-backgroundColorTop": "#4D6279",
+
+		"navigationBarTextStyle": "white",
+		"navigationBarTextStyleReverse": "black",
+		"navBackgroundColor": "#000000",
+		"backgroundColor": "#000000",
+		"backgroundColorTop": "#000000",
+		"backgroundColorBottom": "#000000",
+		"backgroundTextStyle": "light"
+	}
+}
