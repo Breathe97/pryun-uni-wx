@@ -116,7 +116,7 @@
   import { onPageScroll, onShareAppMessage } from '@dcloudio/uni-app'
   import { ref, computed, nextTick, onMounted } from 'vue'
   import type { Ref } from 'vue'
-
+  console.log('\x1b[38;2;0;151;255m%c%s\x1b[0m', 'color:#0097ff;padding:16px 0;', `------->Breathe:`,);
   const store = Store()
   const modalShow = ref(false)
   onShareAppMessage(() => {
@@ -124,7 +124,7 @@
   })
 
   // 监听页面滚动
-  const moreInfoShow: Ref = ref(true)
+  const moreInfoShow : Ref = ref(true)
   setTimeout(() => {
     moreInfoShow.value = false
   }, 1000)
@@ -180,7 +180,7 @@
     key: '',
   })
 
-  const options_navbar: Ref = ref({})
+  const options_navbar : Ref = ref({})
   onMounted(() => {
     options_navbar.value = uni['$pr-navbar']
   })
@@ -190,7 +190,7 @@
   }
   init()
 
-  const pageScrollTo = (id: any) => {
+  const pageScrollTo = (id : any) => {
     uni.pageScrollTo({ selector: id })
   }
 </script>

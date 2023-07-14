@@ -1,15 +1,9 @@
-// /// <reference types="vite/client" />
-
-// declare module "*.vue" {
-// 	import Vue from "vue";
-// 	export default Vue;
-// }
-
-// declare module '*.vue' {
-// 	import type { DefineComponent } from 'vue'
-// 	const component: DefineComponent<{}, {}, any>
-// 	export default component
-// }
+/// <reference types="vite/client" />
+// vue.d.ts 处理 识别 .vue 文件
+declare module '*.vue' {
+  import Vue from 'vue'
+  export default Vue
+}
 
 // 忽略其他类型定义
 declare module '*.js'
