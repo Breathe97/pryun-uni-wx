@@ -1,7 +1,7 @@
-import { request } from '../http'
+import { request } from '../core/http'
 
 // 消息相关接口
 const api = {
-    messagesGet: (options = {}) => request({ method: 'GET', url: '/api/messages-get', ...options }),
+  messagesGet: (options = {}) => request({ method: 'GET', url: '/api/messages-get', ...options }),
 }
 export default api
