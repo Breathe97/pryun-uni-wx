@@ -62,7 +62,7 @@
         </pr-row-cell>
       </pr-card>
       <view class="components-item">
-        <view id="a" class="components-item-anchor" :style="[{ top: `-${options_navbar.navbarHeight}px` }]"></view>
+        <view id="a" class="components-item-anchor" :style="[{ top: `-${options_navbar?.navbarHeight}px` }]"></view>
         <pr-card title="基础组件">
           <template v-for="(item, index) in list_a" :key="index">
             <pr-row-cell :title="item.text" value="" :arrow="true" :border="index === 0 ? 'none' : 'top'" @click="item.path ? toPage(item.path) : (modalShow = true)">
@@ -74,9 +74,9 @@
         </pr-card>
       </view>
       <view class="components-item">
-        <view id="b" class="components-item-anchor" :style="[{ top: `-${options_navbar.navbarHeight}px` }]"></view>
+        <view id="b" class="components-item-anchor" :style="[{ top: `-${options_navbar?.navbarHeight}px` }]"></view>
         <pr-card title="功能组件">
-          <view id="b" style="position: relative" :style="[{ top: `-${options_navbar.navbarHeight}px` }]"></view>
+          <view id="b" style="position: relative" :style="[{ top: `-${options_navbar?.navbarHeight}px` }]"></view>
           <template v-for="(item, index) in list_b" :key="index">
             <pr-row-cell icon="" :title="item.text" value="" :arrow="true" :border="index === 0 ? 'none' : 'top'" @click="item.path ? toPage(item.path) : (modalShow = true)">
               <template v-slot:icon>
@@ -87,9 +87,9 @@
         </pr-card>
       </view>
       <view class="components-item">
-        <view id="c" class="components-item-anchor" :style="[{ top: `-${options_navbar.navbarHeight}px` }]"></view>
+        <view id="c" class="components-item-anchor" :style="[{ top: `-${options_navbar?.navbarHeight}px` }]"></view>
         <pr-card title="模板案例">
-          <view id="c" style="position: relative" :style="[{ top: `-${options_navbar.navbarHeight}px` }]"></view>
+          <view id="c" style="position: relative" :style="[{ top: `-${options_navbar?.navbarHeight}px` }]"></view>
           <template v-for="(item, index) in list_c" :key="index">
             <pr-row-cell icon="" :title="item.text" value="" :arrow="true" :border="index === 0 ? 'none' : 'top'" @click="item.path ? toPage(item.path) : (modalShow = true)">
               <template v-slot:icon>

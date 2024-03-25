@@ -25,6 +25,7 @@
 import md5 from '@/tools/md5'
 import { Store } from '@/store'
 import { nextTick, ref } from 'vue'
+
 const store = Store()
 const props = defineProps({
   // 0不显示欢迎页 1直接显示欢迎页

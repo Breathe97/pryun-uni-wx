@@ -10,7 +10,14 @@ export const createHttp = (proxyObj = {}, interceptors = {}) => {
     let intactIndex = url.indexOf('://')
     if (intactIndex === 5) return url
     // 当前环境 develop:开发版 trial:体验版 release:正式版
-    let envVersion = uni.getAccountInfoSync().miniProgram.envVersion
+    let envVersion = ''
+    // 不是小程序就获取不到
+    try {
+      envVersion = uni.getAccountInfoSync().miniProgram.envVersion
+    } catch (e) {
+      // console.log('\x1b[38;2;0;151;255m%c%s\x1b[0m', 'color:#0097ff;padding:16px 0;', `------->Breathe:e`, e)
+      //TODO handle the exception
+    }
     // 只要不是正式版 就使用开发者指定环境
     if (envVersion !== 'release') {
       envVersion = env_Api
@@ -86,7 +93,7 @@ export const createHttp = (proxyObj = {}, interceptors = {}) => {
       uni.request({
         ...options,
         // @ts-ignore 规避当文件类型为ts的错误检查
-        success: result => {
+        success: (result) => {
           try {
             result = _interceptors.response(result, 'request') // 请求后拦截器
             reslove(result)
@@ -96,7 +103,7 @@ export const createHttp = (proxyObj = {}, interceptors = {}) => {
           }
         },
         // @ts-ignore 规避当文件类型为ts的错误检查
-        fail: err => reject(err) // 错误不处理 全部返回
+        fail: (err) => reject(err), // 错误不处理 全部返回
       })
     })
   }
@@ -109,8 +116,8 @@ export const createHttp = (proxyObj = {}, interceptors = {}) => {
       uni.uploadFile({
         ...options,
         // @ts-ignore 规避当文件类型为ts的错误检查
-        success: result => {
-          if (result.data && typeof (result.data) === "string") {
+        success: (result) => {
+          if (result.data && typeof result.data === 'string') {
             result.data = JSON.parse(result.data) // 反序列化
           }
           try {
@@ -122,7 +129,7 @@ export const createHttp = (proxyObj = {}, interceptors = {}) => {
           }
         },
         // @ts-ignore 规避当文件类型为ts的错误检查
-        fail: err => reject(err) // 错误不处理 全部返回
+        fail: (err) => reject(err), // 错误不处理 全部返回
       })
     })
   }

@@ -61,191 +61,191 @@
 		},
 		// 分包 系统页面
 		{
-			"root": "pages-system",
-			"pages": [
-				// 设置
-				{
-					"path": "set/set-index",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle",
-						"enablePullDownRefresh": true,
-						"backgroundTextStyle": "@backgroundTextStyle"
-					}
-				},
-				// 设置详情
-				{
-					"path": "set/set-options",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 设置提示
-				{
-					"path": "set/set-tip",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 更新日志
-				{
-					"path": "renewLog/renewLog-index",
-					"style": {
-						"navigationBarTextStyle": "white",
-						"backgroundColor": "@renew-log-backgroundColor",
-						"backgroundColorTop": "@renew-log-backgroundColorTop",
-						"enablePullDownRefresh": true,
-						"backgroundTextStyle": "@backgroundTextStyle"
-					}
-				},
-				// 超级管理员
-				{
-					"path": "superAdmin/superAdmin-index",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 新增用户
-				{
-					"path": "user/user-add",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 用户列表
-				{
-					"path": "user/user-list",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 用户详情
-				{
-					"path": "user/user-details",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 新增角色
-				{
-					"path": "role/role-add",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 选择角色
-				{
-					"path": "role/role-select",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 角色列表
-				{
-					"path": "role/role-list",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 角色详情
-				{
-					"path": "role/role-details",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 新增权限
-				{
-					"path": "permission/permission-add",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 选择权限
-				{
-					"path": "permission/permission-select",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 权限列表
-				{
-					"path": "permission/permission-list",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 权限详情
-				{
-					"path": "permission/permission-details",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 新增字段
-				{
-					"path": "formfield/formfield-add",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 选择字段
-				{
-					"path": "formfield/formfield-select",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 字段列表
-				{
-					"path": "formfield/formfield-list",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 字段详情
-				{
-					"path": "formfield/formfield-details",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 新增公司
-				{
-					"path": "companie/companie-add",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 选择公司
-				{
-					"path": "companie/companie-select",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 公司列表
-				{
-					"path": "companie/companie-list",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 公司详情
-				{
-					"path": "companie/companie-details",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				},
-				// 关于
-				{
-					"path": "about/about-index",
-					"style": {
-						"navigationBarTextStyle": "@navigationBarTextStyle"
-					}
-				}
-			]
-		},
+      "root": "pages-system",
+      "pages": [
+        // 设置
+        {
+          "path": "set/set-index",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle",
+            "enablePullDownRefresh": true,
+            "backgroundTextStyle": "@backgroundTextStyle"
+          }
+        },
+        // 设置详情
+        {
+          "path": "set/set-options",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 设置提示
+        {
+          "path": "set/set-tip",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 更新日志
+        {
+          "path": "renewLog/renewLog-index",
+          "style": {
+            "navigationBarTextStyle": "white",
+            "backgroundColor": "@renew-log-backgroundColor",
+            "backgroundColorTop": "@renew-log-backgroundColorTop",
+            "enablePullDownRefresh": true,
+            "backgroundTextStyle": "@backgroundTextStyle"
+          }
+        },
+        // 超级管理员
+        {
+          "path": "superAdmin/superAdmin-index",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 新增用户
+        {
+          "path": "user/user-add",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 用户列表
+        {
+          "path": "user/user-list",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 用户详情
+        {
+          "path": "user/user-details",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 新增角色
+        {
+          "path": "role/role-add",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 选择角色
+        {
+          "path": "role/role-select",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 角色列表
+        {
+          "path": "role/role-list",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 角色详情
+        {
+          "path": "role/role-details",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 新增权限
+        {
+          "path": "permission/permission-add",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 选择权限
+        {
+          "path": "permission/permission-select",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 权限列表
+        {
+          "path": "permission/permission-list",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 权限详情
+        {
+          "path": "permission/permission-details",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 新增字段
+        {
+          "path": "formfield/formfield-add",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 选择字段
+        {
+          "path": "formfield/formfield-select",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 字段列表
+        {
+          "path": "formfield/formfield-list",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 字段详情
+        {
+          "path": "formfield/formfield-details",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 新增公司
+        {
+          "path": "companie/companie-add",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 选择公司
+        {
+          "path": "companie/companie-select",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 公司列表
+        {
+          "path": "companie/companie-list",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 公司详情
+        {
+          "path": "companie/companie-details",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        },
+        // 关于
+        {
+          "path": "about/about-index",
+          "style": {
+            "navigationBarTextStyle": "@navigationBarTextStyle"
+          }
+        }
+      ]
+    },
 		// 分包 测试页面
 		{
 			"root": "pages-test",

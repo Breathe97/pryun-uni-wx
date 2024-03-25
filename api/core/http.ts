@@ -1,4 +1,4 @@
-import { createHttp } from './core'
+import { createHttp } from './createHttp'
 
 // 根据需要配置不同的代理
 const proxyObj = {
