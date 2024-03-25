@@ -1,6 +1,6 @@
 <template>
     <view v-if="visiable">
-        <view class="pr-modal" :class="[{ 'pr-modal-show': modelValue }]" @touchmove.stop="() => {}">
+        <view class="pr-modal" :class="[{ 'pr-modal-show': modelValue }]" @touchmove.stop.prevent="() => {}">
             <view class="pr-modal-content" :class="[{ 'pr-modal-content-show': modelValue }]">
                 <view class="pr-modal-content-title">{{ title }}</view>
                 <view class="pr-modal-content-text">{{ text }}</view>
