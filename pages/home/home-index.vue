@@ -116,7 +116,6 @@ import { Store } from '@/store'
 import { onPageScroll, onShareAppMessage } from '@dcloudio/uni-app'
 import { ref, computed, nextTick, onMounted } from 'vue'
 import type { Ref } from 'vue'
-console.log('\x1b[38;2;0;151;255m%c%s\x1b[0m', 'color:#0097ff;padding:16px 0;', `------->Breathe:`)
 const store = Store()
 const modalShow = ref(false)
 onShareAppMessage(() => {
