@@ -212,6 +212,7 @@ const Style_showHome = computed(() => {
   left: 0;
   top: 0;
   z-index: 99;
+  width: 100%;
   background-color: var(--color-pr-navbar-bg, rgba(242, 241, 246, 0.5));
   transition: all 230ms ease-out;
 }
@@ -221,7 +222,7 @@ const Style_showHome = computed(() => {
 }
 
 .pr-navbar-span {
-  width: 750rpx;
+  width: 100%;
   max-height: 0;
   height: 0;
   overflow: hidden;
@@ -234,12 +235,12 @@ const Style_showHome = computed(() => {
 }
 
 .pr-navbar-status-bar {
-  width: 750rpx;
+  width: 100%;
 }
 
 .pr-navbar-content {
   position: relative;
-  width: 750rpx;
+  width: 100%;
 }
 
 .pr-navbar-dark .pr-navbar-content {
